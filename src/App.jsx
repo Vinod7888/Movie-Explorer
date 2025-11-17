@@ -14,53 +14,66 @@ import About from './pages/About'
 
 export default function App() {
 
-  const routers = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <>
-          <Header />
-          <Home />
-          <Footer />
-        </>
-      )
-    },
-    {
-      path: "/movie/:id",
-      element: (
-        <>
-          <Header />
-          <MovieDetails />
-          <Footer />
-        </>
-      )
-    },
-    {
-      path: "/about",
-      element: (
-        <>
-          <Header />
-          <About />
-          <Footer />
-        </>
-      )
-    },
-    {
-      path: "/movies",
-      element: (
-        <>
-          <Header />
-          <Movies />
-          <Footer />
-        </>
-      )
-    }
-  ],
-    {
-      base: '/Movie-Explorer/',
+  const routers = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: (
+          <>
+            <Header />
+            <Home />
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/movie/:id",
+        element: (
+          <>
+            <Header />
+            <MovieDetails />
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/about",
+        element: (
+          <>
+            <Header />
+            <About />
+            <Footer />
+          </>
+        ),
+      },
+      {
+        path: "/movies",
+        element: (
+          <>
+            <Header />
+            <Movies />
+            <Footer />
+          </>
+        ),
+      },
 
+      // ⭐ VERY IMPORTANT
+      {
+        path: "*",
+        element: (
+          <>
+            <Header />
+            <h1 className="text-center text-3xl py-10">Page Not Found</h1>
+            <Footer />
+          </>
+        )
+      }
+    ],
+    {
+      basename: "/Movie-Explorer",
     }
-  )
+  );
+
 
   useEffect(() => {
     AOS.init({

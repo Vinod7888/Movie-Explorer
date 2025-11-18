@@ -45,30 +45,30 @@ const Header = () => {
             {isOpen && (
                 <div className="md:hidden bg-gray-800">
                     <nav className="flex flex-col space-y-2 py-3 px-6">
-                        <a
-                            href="#"
+                        <Link
+                            to={"/"}
                             className="hover:text-yellow-400 transition border-b border-gray-700 pb-2"
                         >
                             Home
-                        </a>
-                        <a
-                            href="#"
+                        </Link>
+                        <Link
+                           to={"/movies"}
                             className="hover:text-yellow-400 transition border-b border-gray-700 pb-2"
                         >
                             Movies
-                        </a>
-                        <a
-                            href="#"
+                        </Link>
+                        <Link
+                            
                             className="hover:text-yellow-400 transition border-b border-gray-700 pb-2"
                         >
                             Genres
-                        </a>
-                        <a
-                            href="#"
+                        </Link>
+                        <Link
+                           to={"/about"}
                             className="hover:text-yellow-400 transition pb-1"
                         >
                             About
-                        </a>
+                        </Link>
                     </nav>
                 </div>
             )}

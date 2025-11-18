@@ -19,7 +19,6 @@ const Header = () => {
                 <nav className="hidden md:flex space-x-6">
                     <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
                     <Link to="/movies" className="hover:text-yellow-400 transition">Movies</Link>
-                    <a href="#" className="hover:text-yellow-400 transition">Genres</a>
                     <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
                 </nav>
 
@@ -35,7 +34,6 @@ const Header = () => {
                     <nav className="flex flex-col space-y-2 py-3 px-6">
                         <Link to="/" className="hover:text-yellow-400 transition border-b border-gray-700 pb-2">Home</Link>
                         <Link to="/movies" className="hover:text-yellow-400 transition border-b border-gray-700 pb-2">Movies</Link>
-                        <a href="#" className="hover:text-yellow-400 transition border-b border-gray-700 pb-2">Genres</a>
                         <Link to="/about" className="hover:text-yellow-400 transition pb-1">About</Link>
                     </nav>
                 </div>

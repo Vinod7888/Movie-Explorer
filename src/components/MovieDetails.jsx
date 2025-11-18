@@ -22,6 +22,7 @@ export default function MovieDetails() {
                     }
                 )
             }
+            window.scrollTo(0, 0);
             getMovie()
         }, [id]
     )

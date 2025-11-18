@@ -56,7 +56,10 @@ export default function App() {
           </>
         ),
       }
-    ]
+    ],
+    {
+      basename: "/movie-explorer",
+    }
   );
 
 

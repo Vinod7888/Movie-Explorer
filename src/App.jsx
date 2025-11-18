@@ -55,18 +55,6 @@ export default function App() {
             <Footer />
           </>
         ),
-      },
-
-      // ⭐ VERY IMPORTANT
-      {
-        path: "*",
-        element: (
-          <>
-            <Header />
-            <h1 className="text-center text-3xl py-10">Page Not Found</h1>
-            <Footer />
-          </>
-        )
       }
     ]
   );

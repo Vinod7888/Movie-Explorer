@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/movie-explorel/", // yaha repo ka naam
+  base: "/movie-explorer/", // yaha repo ka naam
 })
